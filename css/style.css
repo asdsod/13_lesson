@@ -1,0 +1,170 @@
+@import 'null.css';
+
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    width: 4000px;
+}
+.block{
+    position: absolute;
+    top: 500px;
+    
+}
+.block__body{
+    background-color:steelblue;
+    width: 500px;
+    height: 150px;
+    margin: 200px 0px 0px 950px;
+    position: relative;
+}
+.block__kapot{
+    background-color:steelblue;
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    border-radius: 100% 0% 0% 0% / 87% 0% 10% 10%  ;
+}
+.block__nad-koles{
+    background-color:darkslategray;
+    border-radius: 100% 100% 100% 0% / 100% 100% 0% 100% ;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 680px;
+    z-index: 1;
+
+}
+.block__top{
+    background-color: steelblue;
+    height: 130px;
+    width: 500px;
+    position: absolute;
+    top:70px ;
+    left: 950px ;
+}
+.bagaj{
+    background-color:steelblue;
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 1450px;
+}
+.block__nad-koles_two{
+    background-color:darkslategrey;
+    border-radius: 100% 100% 100% 0% / 100% 100% 0% 100% ;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 1460px;
+}
+.koleso{
+    background-color: black;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 684px;
+    z-index: 1;
+
+}
+.koleso__disk{
+    background-color:aqua;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+.koleso__disk::before{
+    content: '';
+    display: inline-block;
+    background-color: crimson;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 14px;
+    left: 13px;
+    /* transform: rotate(90deg); */
+    animation-name: diska;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes diska{
+    0%{
+        transform: rotate(9000deg);
+    }
+    100%{
+
+    }
+}
+.koleso_two{
+    background-color: black;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 1465px; 
+}
+.koleso__disk_two{
+    background-color:aqua;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+.koleso__disk_two::before{
+    content: '';
+    display: inline-block;
+    background-color: crimson;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 14px;
+    left: 13px;
+
+}
+
+.block__lob{
+    background-color:steelblue;
+    height:120px;
+    width: 300px;
+    position: absolute;
+    top: 230px;
+    left: 650px;
+}
+.block__korekt{
+    background-color:white;
+    height: 160px;
+    width: 100px;
+    position: absolute;
+    top: 25px;
+    left: 897px;
+    transform: rotate(30deg) ;
+}
+.okno{
+    background-color: black;
+    height: 121px;
+    width: 400px;
+    position: absolute;
+    top: 74px;
+    left:998px;
+    transform: skew(-30deg );
+}
+.steklo{
+    background-color: black;
+    height: 121px;
+    width: 100px;
+    position: absolute;
+    top: 74px;
+    left:1340px;
+}
